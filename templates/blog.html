@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+    <title>Blog</title>
+</head>
+<body style="background-color: rgb(1,6,11); background-image: none;">
+    <div class="navbar">
+        <h4 class="img"> <i> NEUROSCOPE</i></h4>
+       <a href="{{ url_for('index') }}">Home</a>
+       <a href="{{ url_for('about') }}">About</a>
+       <a href="{{ url_for('blog') }}">Blog</a>
+       <div class="dropdown">
+        <a href="{{ url_for('user') }}">User</a>
+        <div class="dropdown-content">
+            <a href="{{ url_for('user') }}">Login</a>
+           </div>
+  </div> 
+   </div>
+    <div class="blog-content">
+    <h1>Autism Spectrum Disorder</h1>
+    <p class="blog-p">Autism Spectrum Disorder (ASD) is a complex neurodevelopmental condition that impacts how individuals perceive the world, interact with others, and communicate. It's important to recognize that ASD is a spectrum disorder, meaning it affects people in different ways and to varying degrees. Some individuals may have mild symptoms and be able to lead relatively independent lives, while others may require more substantial support throughout their lives.</p>
+
+    <h2 class="blog-h2">Key Characteristics of ASD</h2>
+    <p class="blog-p">Social Communication Challenges: Individuals with ASD may have difficulty understanding social cues, such as facial expressions, body language, and tone of voice. They may struggle to initiate or maintain conversations and may have limited interest in social interactions.
+
+        Repetitive Behaviors and Interests: Another hallmark of ASD is the presence of repetitive behaviors or interests. This could include repetitive movements (e.g., hand-flapping, rocking), insistence on sameness or routines, and intense focus on specific topics or activities.
+        
+        Sensory Sensitivities: Many individuals with ASD experience sensory sensitivities, meaning they may be overly sensitive or under-responsive to sensory stimuli such as light, sound, touch, or taste. These sensitivities can impact their daily functioning and may lead to sensory overload or meltdowns.</p>
+
+    <h2 class="blog-h2">Early Signs and Detection</h2>
+    <p class="blog-p">Early identification of ASD is crucial for accessing appropriate interventions and support services. Some common signs of ASD may emerge in early childhood, including:
+
+        Delayed or limited speech development
+        Lack of eye contact or social smiling
+        Difficulty understanding or responding to social cues
+        Repetitive behaviors or movements
+        Fixation on specific objects or topics</p>
+     <img src="/static/blog-image.jpg" alt="" srcset="">
+    <h2 class="blog-h2">Support and Resources</h2>
+    <p class="blog-p">While there is no cure for ASD, early intervention and support can greatly improve outcomes for individuals with ASD. There are various interventions and therapies available, including behavioral therapy, speech therapy, occupational therapy, and educational interventions. Additionally, support groups and community resources can provide valuable support and guidance for individuals with ASD and their families.</p>
+
+    <h2 class="blog-h2">Conclusion</h2>
+    <p class="blog-p">By raising awareness and understanding of Autism Spectrum Disorder, we can create a more inclusive and supportive society for individuals with ASD. Our web app aims to contribute to this mission by providing a user-friendly platform for early identification and support. Together, let's work towards a world where individuals with ASD are embraced for their unique strengths and abilities, and where everyone has the opportunity to thrive.</p>
+    <br><br>
+</div>
+</body>
+<footer style="margin-top: 0;">
+    <p>Copyrights &#xA9; 2024 Neuroscope </p> 
+    </footer> 
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+    <title>Login</title>
+</head>
+<body>
+     
+    <div class="alert">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}"id="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    </div>
+    <div class="loginpage">
+        
+    <div class="loginbox">
+    <h2><span>Login</span></h2>
+    <form method="post">
+        <div class="inputbox">
+        <label for="username" class="label">Username</label>
+        <input type="text" id="username" name="username" class="inpt-filed" required><br><br>
+        </div>
+
+        <div class="inputbox">
+        <label for="password" class="label">Password</label>
+        <input type="password" id="password" name="password" class="inpt-filed" required><br><br>
+        </div>
+
+        <button type="submit" class="button">Login</button><br>
+        <p>New user ? <a href="{{url_for('register')}}" style="color: black; text-decoration:underline;">Register</a></p>
+    </form>
+</div>
+</div>
+</body>
+</html>

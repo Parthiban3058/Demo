@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+    <title>About</title>
+</head>
+<body style="background-image:none; background-color: rgb(1, 6, 11);">
+    <div class="navbar">
+        <h4 class="img"> <i> NEUROSCOPE</i></h4>
+       <a href="{{ url_for('home') }}">Home</a>
+       <a href="{{ url_for('about') }}">About</a>
+       <a href="{{ url_for('blog') }}">Blog</a>
+      <div class="dropdown">
+        <a href="{{ url_for('user') }}">User</a>
+          <div class="dropdown-content">
+             <a href="{{ url_for('user') }}">Login</a>
+          </div>
+      </div>
+   </div> 
+    <div class="empty">
+
+    </div>
+        <div class="aboutme">
+            <div class="aboutme-inside">
+                <h3>About Me</h3>
+            </div>
+            <div class="aboutme-inside">
+                <p id="me"> Hello and welcome! I'm Parthiban, a passionate tech enthusiast with a keen interest in exploring the realms of technology, networking, and cloud computing. I am deeply fascinated by the ever-evolving landscape of the digital world and am constantly driven by the excitement of learning and discovering new innovations.With a solid foundation in computer science and a voracious appetite for knowledge, I've delved into various domains, from programming and software development to networking and cloud computing. Each new challenge presents an opportunity for growth, and I thrive on the excitement of learning and mastering new skills</p>
+            </div>
+        </div>
+
+<div class="about-content">
+   <h6 id="item">My Mission</h6>
+  <p class="about-p"> At the core of my endeavors lies a simple yet profound mission - to harness the power of technology to make a positive impact on the world around us. Whether it's through creating innovative solutions, sharing knowledge and insights, or simply inspiring others to embark on their own tech journeys, I strive to contribute to the greater good through my passion for technology.</p>
+   
+   <h6> Journey Through Technology</h6>
+   <p class="about-p">My journey through the world of technology began with a curiosity that soon blossomed into a lifelong passion. Over the years, I have delved into various domains, from programming and software development to networking and cloud computing. Each experience has enriched my understanding and fueled my drive to explore further.
+   
+   <h6>Networking and Cloud Expertise</h6>
+   <p class="about-p"> With a solid foundation in networking and cloud technologies, I have honed my skills in designing, implementing, and optimizing network infrastructures and cloud-based solutions. My expertise extends to areas such as virtualization, cybersecurity, and infrastructure management, where I continuously seek to stay abreast of the latest developments and best practices.</p>
+   
+  <h6> Connect With Me </h6>
+  <p class="about-p"> If you share my passion for technology or have any questions, ideas, or opportunities you'd like to discuss, I'd love to hear from you! Feel free to reach out to me through email - parthiban3058@gmail.com. Let's connect and explore the endless possibilities that technology has to offer, together!</p>
+   
+   <h6>Acknowledgments</h6>
+   <p class="about-p">I am grateful for the support and encouragement of my mentors, peers, and the vibrant tech community that has been instrumental in shaping my journey thus far. Their guidance, insights, and camaraderie have inspired me to push the boundaries of what's possible and pursue my passion with unwavering determination.</p>
+</div>
+</body>
+<footer>
+    <p>Copyrights &#xA9; 2024 Neuroscope </p> 
+    </footer> 
+</html>

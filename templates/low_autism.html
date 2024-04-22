@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+    <title>Low-Autism</title>
+</head>
+<body style="background-color: rgba(131, 184, 141, 0.171); background-image: none;">
+    <div class="navbar">
+        <h4 class="img"> <i> NEUROSCOPE</i></h4>
+       <a href="{{ url_for('index') }}">Home</a>
+       <a href="{{ url_for('about') }}">About</a>
+       <a href="{{ url_for('blog') }}">Blog</a>
+       <div class="dropdown">
+        <a href="#">User</a>
+        <div class="dropdown-content">
+        <a href="#">{{username}}</a>
+        <a href="{{url_for('logout')}}">Logout</a>
+     </div>
+  </div> 
+   </div>
+   <h2 id="low-head">Low likelihood of Autism !</h2>
+    <p class="low">Congratulations! Based on the assessment results, it appears that your child has a low likelihood of autism spectrum disorder (ASD). While every child is unique and develops at their own pace, the responses provided suggest that your child may not exhibit significant signs or symptoms associated with autism.
+        <br><br>
+        It's important to continue monitoring your child's development and to address any concerns you may have with your pediatrician or healthcare provider. Remember that early intervention is key to supporting children's development, so don't hesitate to seek guidance if you notice any changes or have questions about your child's behavior.
+        <br><br><br><br>
+       <b> Here are some resources that may be helpful:</b>
+        <br><br>
+        <div class="wrapper2">
+            <div class="row2">
+        <b>Talk to Your Pediatrician </b><br><br> Schedule regular check-ups with your child's pediatrician to monitor their development and discuss any concerns. <br> <br>
+    </div>
+        <div class="row2">
+        <b>Parenting Support Groups </b><br><br> Join local or online parenting support groups to connect with other parents and share experiences. <br><br>
+    </div>
+        <div class="row2">
+        <b>Early Childhood Development Programs </b><br><br> Explore early childhood development programs and activities in your community that can support your child's growth and learning.</p>
+    </div>
+    </div>
+    </body>
+    <footer>
+        <p>Copyrights &#xA9; 2024 Neuroscope </p> 
+        </footer> 
+</html>

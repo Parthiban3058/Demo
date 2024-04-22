@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+    <title>Moderate_Autism</title>
+</head>
+<body style="background-color: rgba(184, 181, 154, 0.158); background-image: none;">
+    <div class="navbar">
+        <h4 class="img"> <i> NEUROSCOPE</i></h4>
+       <a href="{{ url_for('index') }}">Home</a>
+       <a href="{{ url_for('about') }}">About</a>
+       <a href="{{ url_for('blog') }}">Blog</a>
+       <div class="dropdown">
+        <a href="#">User</a>
+           <div class="dropdown-content">
+           <a href="#">{{username}}</a>
+           <a href="{{url_for('logout')}}">Logout</a>
+        </div>
+  </div> 
+   </div>
+    <h2 id="moderate-head">Moderate Likelihood of Autism !</h2>
+    <p class="moderate">Based on the assessment results, it appears that your child may have a moderate likelihood of autism spectrum disorder (ASD). While this doesn't necessarily mean that your child has autism, it indicates that there may be some signs or symptoms worth further evaluation by a qualified healthcare professional.
+        <br><br>
+        It's essential to seek guidance from your child's pediatrician or a specialist in developmental disorders to determine the best course of action. Early intervention and support can make a significant difference in your child's development and overall well-being.
+        <br> <br>
+       <b> Here are some steps you can take:</b>
+        <br> <br>
+        <div class="wrapper1">
+        <div class="row1">
+       <b> Consult with a Specialist</b><br><br> Schedule an appointment with a developmental pediatrician, child psychologist, or other specialist who can conduct a comprehensive assessment of your child's development. <br><br>
+    </div>
+       <div class="row1">
+        <b>Early Intervention Services</b><br><br> Explore early intervention services and programs available in your area that can provide support and resources for children with developmental delays or disabilities. <br> <br>
+    </div>
+        <div class="row1">
+       <b> Family Support Services</b><br><br> Look for family support services and resources that can provide guidance, information, and emotional support to help you navigate the challenges of raising a child with special needs.</p>
+    </div>
+    </div>
+    </body>
+    <footer>
+        <p>Copyrights &#xA9; 2024 Neuroscope </p> 
+        </footer> 
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+
+    <title>Assessment</title>
+</head>
+<body style="background-image: none;">
+    <div class="body">
+        <div class="navbar">
+            <h4 class="img"> <i> NEUROSCOPE</i></h4>
+           <a href="{{ url_for('index') }}">Home</a>
+           <a href="{{ url_for('about') }}">About</a>
+           <a href="{{ url_for('blog') }}">Blog</a>
+           <div class="dropdown">
+            <a href="#">User</a>
+           <div class="dropdown-content">
+           <a href="#">{{username}}</a>
+           <a href="{{url_for('logout')}}">Logout</a>
+        </div>
+      </div> 
+       </div>
+    <h2 id="head">Autism Assessment</h2>
+   
+
+    <div class="form">
+    <form action="/result" method="POST">
+        {% for question in questions %}
+        <p class="question">{{ question }}</p>
+        <br>
+        <input class="input-filed" id="yes" type="radio" name="response{{ loop.index }}" value="1"> Yes <br>
+        <input class="input-filed" type="radio" name="response{{ loop.index }}" value="0"> No
+        <br><br>
+        {% endfor %}
+        <button type="submit" class="button" id="btn">Submit</button>
+   
+    </form>
+</div>
+</div>
+</body>
+<footer style="margin-top: 0;">
+    <p>Copyrights &#xA9; 2024 Neuroscope </p> 
+    </footer> 
+</html>

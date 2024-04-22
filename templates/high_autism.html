@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style1.css')}}">
+    <title>High-Autism</title>
+</head>
+<body style="background-color: rgba(163, 129, 129, 0.126); background-image: none;">
+    <div class="navbar">
+        <h4 class="img"> <i> NEUROSCOPE</i></h4>
+       <a href="{{ url_for('index') }}">Home</a>
+       <a href="{{ url_for('about') }}">About</a>
+       <a href="{{ url_for('blog') }}">Blog</a>
+       <div class="dropdown">
+        <a href="#">User</a>
+        <div class="dropdown-content">
+        <a href="#">{{username}}</a>
+        <a href="{{url_for('logout')}}">Logout</a>
+     </div>
+  </div> 
+   </div>
+    <h2 id="high-head">High Likelihood of Autism !</h2>
+    <p class="high">Based on the assessment results, it appears that your child may have a high likelihood of autism spectrum disorder (ASD). While this can feel overwhelming, it's essential to remember that early diagnosis and intervention can significantly improve outcomes for children with autism.
+       <br><br>
+        It's crucial to seek a comprehensive evaluation by a qualified healthcare professional who specializes in developmental disorders. This evaluation may include various assessments, observations, and screenings to determine a diagnosis and develop a personalized treatment plan.
+        <br><br>
+<b>Here are some steps you can take:</b>
+        <br><br>
+        <div class="wrapper">
+        <div class="row">
+        <b>Seek a Diagnosis</b><br><br> Schedule an appointment with a developmental pediatrician, child psychologist, or autism specialist for a thorough evaluation and diagnosis. <br><br>
+    </div>
+    <div class="row">
+        <b>Early Intervention Services</b> <br><br> Enroll your child in early intervention services and programs specifically designed to support children with autism and their families. <br><br>
+    </div>
+        <div class="row">
+       <b> Educational Support</b> <br><br>Explore educational resources and programs tailored to the needs of children with autism, such as special education services and individualized education plans (IEPs). <br><br>
+    </div>
+        <div class="row">
+        <b>Family Counseling</b><br><br> Consider seeking family counseling or therapy to help you cope with the emotional and practical challenges of raising a child with autism and to learn strategies for supporting your child's development and well-being. <br><br>
+    </div>
+    </div>
+       <div class="high" id="high-bottom"> Remember that you are not alone, and there are many resources and support networks available to help you and your child navigate the journey ahead. Don't hesitate to reach out for help and support as you advocate for your child's needs and work towards creating a bright and fulfilling future.</p></div>
+</body>
+<footer>
+    <p>Copyrights &#xA9; 2024 Neuroscope </p> 
+    </footer> 
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Autism</title>
+</head>
+<body>
+    <div class="navbar">
+        <h4 class="img"> <i> NEUROSCOPE</i></h4>
+       <a href="{{ url_for('home') }}">Home</a>
+       <a href="{{ url_for('about') }}">About</a>
+       <a href="{{ url_for('blog') }}">Blog</a>
+       <div class="dropdown">
+           <a href="#">User</a>
+          <div class="dropdown-content">
+          <a href="{{ url_for('user') }}">Login</a>
+         </div>
+     </div>
+   </div> 
+    <div class="welcome"> <h1>Autism Spectrum Disorder</h1>  
+       
+        <br><br><br>
+        <p class="content">Welcome to our platform dedicated to fostering understanding and support for Autism Spectrum Disorder (ASD) through accessible assessment tools and resources. ASD is a complex neurological condition that affects communication, social interaction, and behavior. Early identification is crucial, as it allows for timely access to interventions and support services tailored to individual needs. Our user-friendly assessment tool empowers individuals and families to take proactive steps towards understanding and addressing ASD-related concerns. Whether you're new to the journey or seeking additional support, we're here to provide personalized guidance every step of the way. Take the first step towards greater awareness, acceptance, and empowerment by beginning your assessment today.</p>
+        <br><br>
+        <p class="content">Ready to take the first step? Click on the "Take Assessment" button below to begin the screening process. Our assessment tool is designed to be user-friendly and comprehensive, guiding you through a series of questions to help determine if further evaluation may be warranted.</p>
+        </div>
+    
+
+    <div class="btn">
+    <button class="button"  onclick="window.location.href='login'">Take Assessment</button>
+    
+    </div>
+    
+</body>
+<footer>
+    <p>Copyrights &#xA9; 2024 Neuroscope </p> 
+    </footer> 
+</html>
