@@ -64,7 +64,13 @@ def blog():
 @app.route('/user',methods=['GET','POST'])
 def user():
     return redirect('login')
-   
+
+
+@app.route('/chat')
+def chat():
+    return render_template('chat.html')
+
+
 @app.route('/logout')
 def logout():
     session.pop('username', None)  # Remove username from session
