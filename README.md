@@ -27,8 +27,6 @@ To get started with Neuroscope, follow these steps:
 4.Run the application: (Provide command to start Flask app)
 5.Access the application in your web browser: http://localhost:5000
 
-License 
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+https://www.youtube.com/watch?v=3DaLSBSXdo8
 
 
